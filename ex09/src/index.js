@@ -38,11 +38,11 @@ var users = [
 // getUser function - list of users starts here
 function getUsers() {
     var output = '';
-    var i;
-    for (i = 0; i < users.length; i++) {
-        console.log(`${users[i].id} - ${users[i].firstName} ${users[i].lastName} is ${users[i].age}, ${users[i].gender}\n`);
-    }
-    return output;
+    for (let i = 0; i < users.length; i++) {
+        output += `${users[i].id} - ${users[i].firstName} ${users[i].lastName} is ${users[i].age}, ${users[i].gender}\n`;
+      }
+      console.log(output);
+      return output;
 }
 // getUser function - list of users ends here
 
