@@ -36,7 +36,7 @@ function getUsers() {
     var output = '';
     var i;
     for (i = 0; i < users.length; i++) {
-        console.log(`${users[i].firstName} ${users[i].lastName} is ${users[i].age}, ${users[i].gender} \n`);
+        console.log(`${users[i].firstName} ${users[i].lastName} is ${users[i].age}, ${users[i].gender}\n`);
     }
     return output;
 }
