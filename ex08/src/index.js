@@ -51,12 +51,12 @@ function findUser(lastName, gender) {
         return iFindUser;
     } catch (error) {
         console.log("Cannot read property 'firstName' of undefined");// Change this line
-        return error;
+        return "Cannot read property 'firstName' of undefined";
         }
 }
 // findUser(lastName, gender) function ends here
 // Only change code above this line
 getUsers();
-findUser('Winslet', 'female'); //Change this line
+findUser('Winslet', 'male'); //Change this line
 
 module.exports = findUser;

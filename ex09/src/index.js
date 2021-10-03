@@ -55,7 +55,7 @@ function findUserById(id) {
         return iFindUser;
     } catch (error) {
         console.log("Cannot read property 'id'");// Change this line
-        return error;
+        return "Cannot read property 'id'";
     }
 }
 // findUserById(id) function ends here
