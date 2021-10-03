@@ -50,9 +50,9 @@ function findUser(lastName, gender) {
         console.log(iFindUser);
         return iFindUser;
     } catch (error) {
-        return console.log("Cannot read property 'firstName' of undefined");// Change this line
-         // Change this line
-    }
+        console.log("Cannot read property 'firstName' of undefined");// Change this line
+        return error;
+        }
 }
 // findUser(lastName, gender) function ends here
 // Only change code above this line

@@ -54,12 +54,13 @@ function findUserById(id) {
         console.log(iFindUser);
         return iFindUser;
     } catch (error) {
-        return console.log("Cannot read property 'id'");// Change this line
+        console.log("Cannot read property 'id'");// Change this line
+        return error;
     }
 }
 // findUserById(id) function ends here
 // Only change code above this line
 getUsers();
-findUserById(2); // Change this line
+findUserById(5); // Change this line
 
 module.exports = findUserById;
